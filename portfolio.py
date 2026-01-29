@@ -29,24 +29,25 @@ with col1:
     st.link_button("Launch AI App", "https://ai-market-intelligence-app-r58mtkgg7ojsnfbehb9ubk.streamlit.app/")
 
 
-# 1. Update the columns to show 2 projects side-by-side
+# Create two columns for your two projects
 col1, col2 = st.columns(2)
 
 with col1:
     st.container(border=True)
     st.image("ai_screenshot.png")
     st.subheader("Market Intelligence AI")
-    st.write("A RAG-powered assistant for financial analysis.")
-    st.link_button("Launch AI App", "https://your-rag-link.streamlit.app")
+    st.write("A RAG-powered assistant for financial report analysis.")
+    # Use your real Streamlit RAG link here
+    st.link_button("Launch AI App", "https://your-real-rag-link.streamlit.app")
 
 with col2:
     st.container(border=True)
-    # Pro-tip: Take a screenshot of your Grooming app and name it 'grooming_app.png'
-    st.image("grooming_app.png") 
+    # Don't forget to add a screenshot of your grooming app to your folder!
+    st.image("grooming_screenshot.png") 
     st.subheader("Grooming Booking System")
     st.write("A full-stack booking platform for pet grooming services.")
-    # Use your Vercel link here!
-    st.link_button("View on Vercel", "https://your-grooming-app.vercel.app")
+    # PASTE YOUR REAL VERCEL LINK HERE 👇
+    st.link_button("View on Vercel", "https://your-actual-grooming-link.vercel.app")
 
 # 5. Coming Soon Section
 st.divider()
