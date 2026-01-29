@@ -47,7 +47,7 @@ with col2:
     st.subheader("Grooming Booking System")
     st.write("A full-stack booking platform for pet grooming services.")
     # PASTE YOUR REAL VERCEL LINK HERE 👇
-    st.link_button("View on Vercel", "https://your-actual-grooming-link.vercel.app")
+    st.link_button("View on Vercel", "https://dog-grooming-booking.vercel.app/")
 
 # 5. Coming Soon Section
 st.divider()
