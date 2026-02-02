@@ -1,72 +1,64 @@
 import streamlit as st
 
-# 1. Page Configuration
-st.set_page_config(page_title="Tina | AI Portfolio", layout="wide")
+# --- PAGE CONFIG ---
+st.set_page_config(page_title="AI Portfolio Hub", layout="wide")
 
-# 2. Sidebar / About Me
-with st.sidebar:
-    st.title("Tina")
-    st.subheader("AI Solutions Architect")
-    st.write("Building the bridge between complex data and simple, powerful AI tools.")
-    st.divider()
-    st.write("📧 contact@yourdomain.com")
-    st.write("[LinkedIn](#) | [GitHub](#)")
+# --- CUSTOM CSS FOR MODERN LOOK ---
+st.markdown("""
+    <style>
+    .stContainer {
+        background-color: #1e1e1e;
+        border-radius: 15px;
+        padding: 20px;
+        border: 1px solid #333;
+    }
+    .stHeader {
+        color: #00d4ff;
+    }
+    </style>
+    """, unsafe_allow_html=True)
 
-# 3. Hero Section
-st.title("Project Portfolio")
-st.write("Explore my latest AI agents and web applications.")
+# --- HEADER SECTION ---
+st.title("🚀 Elia's AI Portfolio")
+st.markdown("### Specialized in Agentic Workflows & Full-Stack Automation")
+st.write("Welcome to my hub. Here I showcase my journey in building intelligent systems.")
+st.divider()
 
-# 4. Project Gallery (The Grid)
-col1, col2 = st.columns(2)
+# --- THE BENTO GRID (2x2) ---
+row1_col1, row1_col2 = st.columns(2)
+row2_col1, row2_col2 = st.columns(2)
 
-with col1:
-    st.container(border=True)
-    # This line now looks for the file in your folder!
-    st.image("ai_screenshot.png") 
-    st.subheader("Market Intelligence AI")
-    st.write("A RAG-powered assistant analyzing financial reports with citations.")
-    # Add your real live app URL here
-    st.link_button("Launch AI App", "https://ai-market-intelligence-app-r58mtkgg7ojsnfbehb9ubk.streamlit.app/")
+# --- PROJECT 1: AI LEAD SCOUT ---
+with row1_col1:
+    with st.container(border=True):
+        st.subheader("🌍 AI Lead-Intelligence Scout")
+        st.image("ai_screenshot.png") # Make sure this file exists in your repo!
+        st.write("**One-liner:** A multi-agent system that automates corporate scouting and financial auditing for social impact.")
+        st.markdown("**🛠️ Tech Stack:** `Python` | `CrewAI` | `GPT-4o` | `Serper` | `Streamlit`")
+        st.link_button("Launch Agent", "https://universal-social-impact-lead-gen-qngbjvmc4toqyhuwe34au3.streamlit.app/")
+        st.link_button("View Code", "https://github.com/Foxie-dev/Universal-Social-Impact-Lead-Gen")
 
-
-# Create two columns for your two projects
-col1, col2 = st.columns(2)
-
-with col1:
-    st.container(border=True)
-    st.image("ai_screenshot.png")
-    st.subheader("Market Intelligence AI")
-    st.write("A RAG-powered assistant for financial report analysis.")
-    # Use your real Streamlit RAG link here
-    st.link_button("Launch AI App", "https://your-real-rag-link.streamlit.app")
-
-with col2:
-    with st.container(border=True): # Added 'with' so items stay inside
-        st.image("grooming_screenshot.png") 
-        st.subheader("Grooming Booking System")
-        st.write("A full-stack booking platform for pet grooming services.")
-        # Ensure these are aligned with the st.write above
+# --- PROJECT 2: GROOMING SYSTEM ---
+with row1_col2:
+    with st.container(border=True):
+        st.subheader("🐶 Grooming Booking System")
+        st.image("grooming_screenshot.png") # This exists in your repo!
+        st.write("**One-liner:** A full-stack booking platform for pet services with real-time scheduling and customer management.")
+        st.markdown("**🛠️ Tech Stack:** `React` | `Node.js` | `Vercel` | `Tailwind CSS`")
         st.link_button("View on Vercel", "https://dog-grooming-booking.vercel.app/")
 
-# 5. Project 3 Section (Replacing Coming Soon)
-st.divider()
-st.subheader("🌍 AI Lead-Intelligence Scout")
+# --- PROJECT 3: FINANCIAL RAG (Placeholder) ---
+with row2_col1:
+    with st.container(border=True):
+        st.subheader("📊 Financial Report RAG")
+        st.write("**One-liner:** A conversational AI assistant that extracts and analyzes deep insights from complex PDF financial reports.")
+        st.markdown("**🛠️ Tech Stack:** `LangChain` | `ChromaDB` | `OpenAI` | `Streamlit`")
+        st.info("Status: 🚧 Under Construction")
 
-with st.container(border=True):
-    col1, col2 = st.columns([1, 2])
-    
-    with col1:
-        # You can add a screenshot here later
-        st.image("https://images.unsplash.com/photo-1551288049-bbda38a5f85d?auto=format&fit=crop&q=80&w=400") 
-        
-    with col2:
-        st.write("""
-        A multi-agent AI system built with **CrewAI** that automates B2B research. 
-        - **Financial Auditing:** Scrapes Allabolag.se for real-time Swedish revenue data.
-        - **Contact Discovery:** Finds names/titles for CEOs and Sustainability Managers.
-        - **Alignment Analysis:** Summarizes how companies fit specific social impact missions.
-        """)
-        
-        # Replace with your actual live Streamlit link
-        st.link_button("Launch AI Scout", "https://universal-social-impact-lead-gen-qngbjvmc4toqyhuwe34au3.streamlit.app/")
-        st.link_button("View Code", "https://github.com/Foxie-dev/Universal-Social-Impact-Lead-Gen")
+# --- PROJECT 4: FUTURE AGENT (Placeholder) ---
+with row2_col2:
+    with st.container(border=True):
+        st.subheader("🔧 Next-Gen AI Automation")
+        st.write("**One-liner:** My next project focusing on real-world process automation using advanced Agentic logic.")
+        st.markdown("**🛠️ Tech Stack:** `TBD` | `Python` | `LLMs`")
+        st.info("Status: 📅 Coming Soon")
