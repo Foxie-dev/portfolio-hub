@@ -41,13 +41,12 @@ with col1:
     st.link_button("Launch AI App", "https://your-real-rag-link.streamlit.app")
 
 with col2:
-    st.container(border=True)
-    # Don't forget to add a screenshot of your grooming app to your folder!
-    st.image("grooming_screenshot.png") 
-    st.subheader("Grooming Booking System")
-    st.write("A full-stack booking platform for pet grooming services.")
-    # PASTE YOUR REAL VERCEL LINK HERE 👇
-    st.link_button("View on Vercel", "https://dog-grooming-booking.vercel.app/")
+    with st.container(border=True): # Added 'with' so items stay inside
+        st.image("grooming_screenshot.png") 
+        st.subheader("Grooming Booking System")
+        st.write("A full-stack booking platform for pet grooming services.")
+        # Ensure these are aligned with the st.write above
+        st.link_button("View on Vercel", "https://dog-grooming-booking.vercel.app/")
 
 # 5. Project 3 Section (Replacing Coming Soon)
 st.divider()
