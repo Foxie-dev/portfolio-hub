@@ -3,14 +3,14 @@ import streamlit as st
 # --- PAGE CONFIG ---
 st.set_page_config(page_title="Tina | AI Portfolio", layout="wide")
 
-# Header Section
+# --- HEADER ---
 st.title("🚀 Tina's Portfolio")
 st.markdown("### AI Automation & Full-Stack Development")
 st.write("Professional hub showcasing agentic workflows and intelligent applications.")
 st.divider()
 
 # --- THE BENTO GRID (2x2) ---
-# We use columns to create the "boxing" style for symmetry
+# Creating columns for a neat, symmetrical boxing style
 row1_col1, row1_col2 = st.columns(2)
 row2_col1, row2_col2 = st.columns(2)
 
@@ -18,7 +18,7 @@ row2_col1, row2_col2 = st.columns(2)
 with row1_col1:
     with st.container(border=True):
         st.subheader("🌍 AI Lead-Intelligence Scout")
-        # This looks for the image you just pushed
+        # POINTING TO YOUR NEW SCREENSHOT
         st.image("ai_screenshot.png", use_container_width=True) 
         st.write("**Summary:** A multi-agent AI system automating corporate scouting and Swedish B2B financial auditing.")
         st.markdown("**🛠️ Tech:** `Python` | `CrewAI` | `GPT-4o` | `Serper` ")
@@ -35,22 +35,22 @@ with row1_col2:
         st.markdown("**🛠️ Tech:** `React` | `Node.js` | `Vercel` | `Tailwind` ")
         st.link_button("View on Vercel", "https://dog-grooming-booking.vercel.app/")
 
-# --- PROJECT 3: FINANCIAL REPORT RAG ---
+# --- PROJECT 3: FINANCIAL REPORT RAG (PDF Assistant) ---
 with row2_col1:
     with st.container(border=True):
         st.subheader("📊 Financial Report RAG")
-        # Placeholder image until you have a RAG screenshot
-        st.image("https://via.placeholder.com/600x400.png?text=Financial+RAG+Dashboard", use_container_width=True)
-        st.write("**Summary:** Conversational AI for extracting deep insights from complex PDF financial reports.")
+        # This is where the RAG assistant image should actually go
+        st.image("https://via.placeholder.com/600x400.png?text=RAG+PDF+Assistant", use_container_width=True)
+        st.write("**Summary:** Conversational AI assistant designed to extract insights from complex PDF financial reports.")
         st.markdown("**🛠️ Tech:** `LangChain` | `ChromaDB` | `OpenAI` | `Streamlit` ")
-        # REPLACE '#' WITH YOUR ACTUAL RAG LINK BELOW
-        st.link_button("Launch RAG", "https://your-rag-link.streamlit.app")
+        # Add your actual RAG link below when ready
+        st.link_button("Launch RAG Assistant", "https://your-rag-link.streamlit.app")
 
 # --- PROJECT 4: FUTURE AUTOMATION ---
 with row2_col2:
     with st.container(border=True):
         st.subheader("🔧 Next-Gen AI Automation")
         st.image("https://via.placeholder.com/600x400.png?text=Coming+Soon", use_container_width=True)
-        st.write("**Summary:** Exploring advanced agentic logic for industrial and corporate process automation.")
+        st.write("**Summary:** My next project focusing on real-world process automation using advanced Agentic logic.")
         st.markdown("**🛠️ Tech:** `Python` | `LLMs` | `AutoGPT` ")
         st.info("📅 Status: Coming Soon")
