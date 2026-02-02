@@ -68,5 +68,5 @@ with st.container(border=True):
         """)
         
         # Replace with your actual live Streamlit link
-st.link_button("Launch AI Scout", "https://universal-social-impact-lead-gen-qngbjvmc4toqyhuwe34au3.streamlit.app/")
+        st.link_button("Launch AI Scout", "https://universal-social-impact-lead-gen-qngbjvmc4toqyhuwe34au3.streamlit.app/")
         st.link_button("View Code", "https://github.com/Foxie-dev/Universal-Social-Impact-Lead-Gen")
