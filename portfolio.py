@@ -38,7 +38,7 @@ with col3:
         st.write("**Summary:** Conversational AI assistant designed to extract and analyze insights from complex PDF reports.")
         st.markdown("**🛠️ Tech:** `LangChain` | `ChromaDB` | `OpenAI` | `Streamlit` ")
         # Ensure your RAG link is pasted here when ready
-        st.link_button("Launch RAG Assistant", "https://your-rag-link.streamlit.app")
+        st.link_button("Launch RAG Assistant", "https://ai-market-intelligence-app-r58mtkgg7ojsnfbehb9ubk.streamlit.app/")
 
 # --- PROJECT 4: FUTURE AUTOMATION ---
 with col4:
